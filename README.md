@@ -10,10 +10,10 @@ A conventional and practical approach is to divide the existing dataset into two
 
 <div style="text-align: center;">
 <img src="./images/train test set.jpg" alt="train test set" width="600">
+  <h6> Figure 1: Example of training and test set (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
 </div>
 
 The model is trained using the training set, where parameters (e.g., weights 𝑤 and biases b) are optimized by minimizing a cost function.
 
 The test set, which remains unseen during training, is then used to evaluate the model's performance by computing test errors.
 
-<h6>Note: The first image is a screenshot taken from the Coursera Advanced Machine Learning course.</h6>
