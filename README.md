@@ -17,3 +17,5 @@ The model is trained using the training set, where parameters (e.g., weights ğ‘
 
 The test set, which remains unseen during training, is then used to evaluate the model's performance by computing test errors.
 
+## Model Selection
+The test set helps us determine the optimal model by evaluating and comparing the performance of multiple models, allowing us to select the one that performs best on unseen data.
