@@ -20,5 +20,6 @@ For instance, in regression tasks, a common cost function is the Mean Squared Er
 <div style="text-align: center;">
 <img src="./images/errorformula.png" alt="Squared Error Cost" width="600" height="100">
 </div>
+<h6>This image is a screenshot taken from the Coursera Advanced Machine Learning course.</h6>
 
 Here, 𝑚 represents the number of training examples, 𝑦<sup>(𝑖)</sup> is the actual output, and 𝑦<sup>(i)</sup> is the predicted output
