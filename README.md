@@ -10,7 +10,6 @@ A conventional and practical approach is to divide the existing dataset into two
 
 <div style="text-align: center;">
 <img src="./images/train test set.jpg" alt="train test set" width="600">
-<h6>Note: This image is a screenshot taken from the Coursera Advanced Machine Learning course.</h6>
 </div>
 
 The model is trained using the training set, where parameters (e.g., weights 𝑤 and biases b) are optimized by minimizing a cost function.
@@ -23,3 +22,4 @@ For instance, in regression tasks, a common cost function is the Mean Squared Er
 </div>
 
 Here, 𝑚 represents the number of training examples, 𝑦<sup>(𝑖)</sup> is the actual output, and 𝑦<sup>(i)</sup> is the predicted output
+<h6>Note: The first image is a screenshot taken from the Coursera Advanced Machine Learning course.</h6>
