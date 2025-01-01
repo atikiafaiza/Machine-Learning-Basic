@@ -3,7 +3,7 @@
 ## Evaluating a model
 Model evaluation in machine learning is the process of assessing how well a trained model performs on <b>unseen</b> data. It involves using metrics and techniques to measure the model's accuracy, precision, or other relevant indicators depending on the task. The goal is to ensure the model generalizes effectively. Proper evaluation helps identify overfitting, underfitting, and areas for improvement, ensuring the model's reliability and effectiveness in real-world applications.
 
-#### Training and Test Set
+### Training and Test Set
 As mentioned earlier, evaluating a model requires unforeseen data to assess its performance effectively. However, collecting such data can often be costly and time-consuming.
 
 A conventional and practical approach is to divide the existing dataset into two subsets: the training set and the test set.
@@ -44,13 +44,16 @@ The issue with this approach is that while we aim to find the best model for **u
 
 To summarize, this approach results in **fitting the test set**, which compromises its purpose as a purely unseen dataset. Consequently, the selected model may not generalize well to entirely new, unseen data. This highlights the need for an additional dataset (e.g., a validation set) or alternative evaluation techniques to mitigate this issue.
 
-#### Cross Validation sets
-To address the issue of overfitting the test set, a **cross-validation set** is introduced, which is another subset of the main dataset. Now, the dataset is divided into three subsets: **training set**, **cross-validation set**, and **test set**. The updated flow becomes:
+### Cross Validation sets
+To address the issue of overfitting the test set, a **cross-validation set** is introduced, which is another subset of the main dataset. Now, the dataset is divided into three subsets: **training set**, **cross-validation set**, and **test set**.
 
 <div style="text-align: center;">
 <img src="./images/cross validation set.png" alt="cross validation set" width="600">
   <h6> Figure 2: Example of cross validation set (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
 </div>
+
+The updated flow becomes:
+
 
 1. **Fit the parameters \( w, b \):** Train the model using the **training set** to minimize the cost function and learn the optimal parameters.
 2. **Choose the best model:** Evaluate multiple models on the **cross-validation set** and select the one with the **least error** on this set.
