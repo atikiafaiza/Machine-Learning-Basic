@@ -1,6 +1,6 @@
 # Machine-Learning-Basic
 
-### <style:color="blue">Evaluating a model</style>
+<h3 style:color="blue">Evaluating a model</h3>
 Model evaluation in machine learning is the process of assessing how well a trained model performs on <b>unseen</b> data. It involves using metrics and techniques to measure the model's accuracy, precision, or other relevant indicators depending on the task. The goal is to ensure the model generalizes effectively. Proper evaluation helps identify overfitting, underfitting, and areas for improvement, ensuring the model's reliability and effectiveness in real-world applications.
 
 ##### Training and Test Set
