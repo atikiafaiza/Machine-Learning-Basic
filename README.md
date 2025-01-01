@@ -10,7 +10,7 @@ A conventional and practical approach is to divide the existing dataset into two
 
 <div style="text-align: center;">
 <img src="./images/train test set.jpg" alt="train test set" width="600">
-<h6>This image is a screenshot taken from the Coursera Advanced Machine Learning course.</h6>
+<h6>Note: This image is a screenshot taken from the Coursera Advanced Machine Learning course.</h6>
 </div>
 
 The model is trained using the training set, where parameters (e.g., weights 𝑤 and biases b) are optimized by minimizing a cost function.
