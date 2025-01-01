@@ -39,3 +39,7 @@ The process involves the following flow:
 
 1. All models minimize the cost function (e.g., 𝐽(𝑤,𝑏)) on the training set by fitting parameters 𝑤 and 𝑏.
 2. By testing on the test set, we evaluate each model's performance and select the one with the lowest error.
+
+The issue with this approach is that while we aim to find the best model for **unseen data**, the test set eventually becomes a **seen dataset** during the model selection process. By choosing the model with the lowest error on the test set, we are effectively treating the test set as part of the training process. This means that the models are being indirectly trained on the test set, much like how they were trained and fitted to the training set.
+
+To summarize, this approach results in **fitting the test set**, which compromises its purpose as a purely unseen dataset. Consequently, the selected model may not generalize well to entirely new, unseen data. This highlights the need for an additional dataset (e.g., a validation set) or alternative evaluation techniques to mitigate this issue.
