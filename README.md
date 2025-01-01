@@ -8,6 +8,10 @@ As mentioned earlier, evaluating a model requires unforeseen data to assess its 
 
 A conventional and practical approach is to divide the existing dataset into two subsets: the training set and the test set.
 
+<div style="text-align: center;">
+<img src="./images/train test set.jpg" alt="train test set" width="600">
+</div>
+
 The model is trained using the training set, where parameters (e.g., weights 𝑤 and biases b) are optimized by minimizing a cost function.
 
 The test set, which remains unseen during training, is then used to evaluate the model's performance by computing test errors.
