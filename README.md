@@ -14,7 +14,7 @@ The test set, which remains unseen during training, is then used to evaluate the
 
 For instance, in regression tasks, a common cost function is the Mean Squared Error (MSE), given by: 
 <div style="text-align: center;">
-<img src="./images/errorformula.png" alt="Squared Error Cost" width="600">
+<img src="./images/errorformula.png" alt="Squared Error Cost" width="600" height="300">
 </div>
 
 Here, 𝑚 represents the number of training examples, 𝑦<sup>(𝑖)</sup> is the actual output, and 𝑦<sup>(i)</sup> is the predicted output
