@@ -24,9 +24,13 @@ The test set helps us determine the optimal model by evaluating and comparing th
 Let’s say there are 10 models like the following:
 
 𝑓<sub>𝑤,𝑏</sub>(𝑥) = 𝑤<sub>1</sub>𝑥 + 𝑏
+
 f<sub>𝑤,𝑏</sub>(𝑥) = w<sub>1</sub>x + w<sub>2</sub>x<sup>2</sup> + b
+
 f<sub>𝑤,𝑏</sub>(𝑥) = w<sub>1</sub>x + w<sub>2</sub>x<sup>2</sup> + w<sub>3</sub>x<sup>3</sup> + b
+
 ....
+
 f<sub>𝑤,𝑏</sub>(𝑥) = w<sub>1</sub>x + w<sub>2</sub>x<sup>2</sup> + ... + w<sub>10</sub>x<sup>10</sup> + b
 
 Suppose we trained each of these models on the training set and tested them on the test set. After evaluation, we found that Model 5 had the least error on the test set. Based on this, we can choose Model 5 as the optimal model.
