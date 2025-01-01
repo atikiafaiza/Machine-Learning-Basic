@@ -16,10 +16,4 @@ The model is trained using the training set, where parameters (e.g., weights �
 
 The test set, which remains unseen during training, is then used to evaluate the model's performance by computing test errors.
 
-For instance, in regression tasks, a common cost function is the Mean Squared Error (MSE), given by: 
-<div style="text-align: center;">
-<img src="./images/errorformula.png" alt="Squared Error Cost" width="600" height="100">
-</div>
-
-Here, 𝑚 represents the number of training examples, 𝑦<sup>(𝑖)</sup> is the actual output, and 𝑦<sup>(i)</sup> is the predicted output
 <h6>Note: The first image is a screenshot taken from the Coursera Advanced Machine Learning course.</h6>
