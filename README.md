@@ -43,3 +43,17 @@ The process involves the following flow:
 The issue with this approach is that while we aim to find the best model for **unseen data**, the test set eventually becomes a **seen dataset** during the model selection process. By choosing the model with the lowest error on the test set, we are effectively treating the test set as part of the training process. This means that the models are being indirectly trained on the test set, much like how they were trained and fitted to the training set.
 
 To summarize, this approach results in **fitting the test set**, which compromises its purpose as a purely unseen dataset. Consequently, the selected model may not generalize well to entirely new, unseen data. This highlights the need for an additional dataset (e.g., a validation set) or alternative evaluation techniques to mitigate this issue.
+
+#### Cross Validation sets
+To address the issue of overfitting the test set, we introduce a **cross-validation set**, which is another subset of the main dataset. Now, the dataset is divided into three subsets: **training set**, **cross-validation set**, and **test set**. The updated flow becomes:
+
+<div style="text-align: center;">
+<img src="./images/cross validation set" alt="cross validation set" width="600">
+  <h6> Figure 2: Example of cross validation set (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
+</div>
+
+1. **Fit the parameters \( w, b \):** Train the model using the **training set** to minimize the cost function and learn the optimal parameters.
+2. **Choose the best model:** Evaluate multiple models on the **cross-validation set** and select the one with the **least error** on this set.
+3. **Final accuracy check:** Test the performance of the chosen model on the **test set** to assess how well it generalizes to unseen data.
+
+This approach ensures that the test set remains untouched during model selection, preserving its integrity for evaluating the model's performance on truly unseen data.
