@@ -45,10 +45,10 @@ The issue with this approach is that while we aim to find the best model for **u
 To summarize, this approach results in **fitting the test set**, which compromises its purpose as a purely unseen dataset. Consequently, the selected model may not generalize well to entirely new, unseen data. This highlights the need for an additional dataset (e.g., a validation set) or alternative evaluation techniques to mitigate this issue.
 
 #### Cross Validation sets
-To address the issue of overfitting the test set, we introduce a **cross-validation set**, which is another subset of the main dataset. Now, the dataset is divided into three subsets: **training set**, **cross-validation set**, and **test set**. The updated flow becomes:
+To address the issue of overfitting the test set, a **cross-validation set** is introduced, which is another subset of the main dataset. Now, the dataset is divided into three subsets: **training set**, **cross-validation set**, and **test set**. The updated flow becomes:
 
 <div style="text-align: center;">
-<img src="./images/cross validation set" alt="cross validation set" width="600">
+<img src="./images/cross validation set.png" alt="cross validation set" width="600">
   <h6> Figure 2: Example of cross validation set (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
 </div>
 
