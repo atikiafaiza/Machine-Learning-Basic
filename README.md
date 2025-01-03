@@ -98,3 +98,24 @@ In **Figure 4**, we can analyze the errors for the three models:
    - **Conclusion:** The middle model balances bias and variance effectively, achieving low **Jtrain** and **Jcv**.
 
 There may also be an exceptional case where the model exhibits both **high bias** and **high variance**. In this rare scenario, the model fails to fit the training set well (resulting in a high **Jtrain**) and also performs poorly on the cross-validation set (leading to a high **Jcv**). However, such cases are uncommon in practice.
+
+## Regularization with bias and variance 
+The **regularization parameter** (denoted as \( \lambda \)) is a hyperparameter added to the cost function to penalize the complexity of the model, helping to prevent overfitting by discouraging overly complex models. 
+\[
+J(w, b) = \frac{1}{2m} \sum_{i=1}^m \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2 + \frac{\lambda}{2m} \sum_{j=1}^n w_j^2
+\]  
+Here: 𝑚 is the number of training examples, 𝑓<sub>w,b</sub>(𝑥<sup>(i)</sup>) is the predicted output, y<sup>(i)</sup> is the actual output, w<sub>j</sub><sup>2</sup> is the squared weights of the model parameters and λ is the regularization parameter. 
+
+An optimal regularization parameter \( \lambda \) can also be determined depending on the model's bias and variance.
+
+<div style="text-align: center;">
+<img src="./images/regularization with bias and variance.png" alt="regularization with bias and variance" width="600">
+  <h6> Figure 5: Example of regularization with bias and variance (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
+</div>
+
+From **Figure 5**, we observe the following:  
+- The **left model** with a high \( \lambda \) has **high bias**, meaning it underfits the data.  
+- The **right model** with \( \lambda = 0 \) has **high variance**, meaning it overfits the data.  
+- The **middle model** with an intermediate \( \lambda \) achieves a balance between bias and variance, making it **just right**.
+
+To choose the optimal \( \lambda \), we can fit the model with different \( \lambda \) values, similar to how we tested different models during model selection. By testing the error \( J_{cv} \) for each \( \lambda \) on the cross-validation set, we select the \( \lambda \) that produces the least \( J_{cv} \).
