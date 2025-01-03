@@ -64,7 +64,15 @@ This approach ensures that the test set remains untouched during model selection
 ## Bias and Variance
 
 <div style="text-align: center;">
-<img src="./images/Bias and Variance.png" alt="Bias and Variance" width="600">
+<img src="./images/Bias and Variance.png" alt="Bias and Variance" width="700">
   <h6> Figure 3: Example of Bias and Variance (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
 </div>
+
+From **Figure 3**, we observe three models trained on the same dataset:
+
+1. **Left Model:** This model barely fits the dataset. For new data points, it will rigidly follow the model's simplistic line, leading to inaccurate predictions. This behavior indicates the model is **biased towards the dataset**, resulting in **high bias**.
+   
+2. **Right Model:** This model fits the dataset too perfectly, capturing even the smallest variations in the training data. Such overfitting makes the model overly reliant on the training data, causing it to vary excessively for each new data point. This behavior is referred to as **high variance**.
+
+3. **Middle Model:** This model achieves a balance by fitting the training dataset neither too rigidly nor too loosely. It generalizes well to unseen data, making it the **optimal choice**. It avoids the extremes of high bias and high variance, making it "just right."
 
