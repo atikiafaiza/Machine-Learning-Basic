@@ -103,7 +103,7 @@ There may also be an exceptional case where the model exhibits both **high bias*
 The **regularization parameter** (denoted as \( \lambda \)) is a hyperparameter added to the cost function to penalize the complexity of the model, helping to prevent overfitting by discouraging overly complex models. 
 
 <div style="text-align: center;">
-<img src="./images/errorformula with regularization.png" alt="errorformula with regularization" width="600">
+<img src="./images/errorformula with regularization.png" alt="errorformula with regularization" width="600" height="100">
 </div>
 
 Here: 𝑚 is the number of training examples, 𝑓<sub>w,b</sub>(𝑥<sup>(i)</sup>) is the predicted output, y<sup>(i)</sup> is the actual output, w<sub>j</sub><sup>2</sup> is the squared weights of the model parameters and λ is the regularization parameter. 
