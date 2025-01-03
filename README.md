@@ -60,3 +60,11 @@ The updated flow becomes:
 3. **Final accuracy check:** Test the performance of the chosen model on the **test set** to assess how well it generalizes to unseen data.
 
 This approach ensures that the test set remains untouched during model selection, preserving its integrity for evaluating the model's performance on truly unseen data.
+
+## Bias and Variance
+
+<div style="text-align: center;">
+<img src="./images/Bias and Variance.png" alt="Bias and Variance" width="600">
+  <h6> Figure 3: Example of Bias and Variance (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
+</div>
+
