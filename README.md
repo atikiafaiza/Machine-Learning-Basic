@@ -77,6 +77,22 @@ From **Figure 3**, we observe three models trained on the same dataset:
 3. **Middle Model:** This model achieves a balance by fitting the training dataset neither too rigidly nor too loosely. It generalizes well to unseen data, making it the **optimal choice**. It avoids the extremes of high bias and high variance, making it "just right."
 
 <div style="text-align: center;">
-<img src="./images/error in case of bias and variance.png" alt="error in case of bias and variance" width="700">
-  <h6> Figure 3: Example of error in case of bias and variance (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
+<img src="./images/error in case of bias and variance.png" alt="error in case of bias and variance" width="600">
+  <h6> Figure 4: Example of error in case of bias and variance (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
 </div>
+
+In **Figure 4**, we can analyze the errors for the three models:
+
+1. **First Model (High Bias):**  
+   - The error on the training set (**Jtrain**) is very high because the model cannot capture the underlying pattern of the data.  
+   - Similarly, the error on the cross-validation set (**Jcv**) is also high because the model fails to generalize.  
+   - **Conclusion:** When a model has **high bias**, both **Jtrain** and **Jcv** will be high.
+
+2. **Right Model (High Variance):**  
+   - The error on the training set (**Jtrain**) is very low, almost zero, as the model fits the training data excessively well.  
+   - However, the error on the cross-validation set (**Jcv**) is high because the model overfits the training data and performs poorly on unseen data.  
+   - **Conclusion:** When a model has **high variance**, **Jtrain** is low, but **Jcv** is significantly higher than **Jtrain**.
+
+3. **Middle Model (Just Right):**  
+   - The error on both the training set (**Jtrain**) and the cross-validation set (**Jcv**) is low, indicating that the model is neither overfitting nor underfitting.  
+   - **Conclusion:** The middle model balances bias and variance effectively, achieving low **Jtrain** and **Jcv**.  
