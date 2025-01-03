@@ -76,3 +76,7 @@ From **Figure 3**, we observe three models trained on the same dataset:
 
 3. **Middle Model:** This model achieves a balance by fitting the training dataset neither too rigidly nor too loosely. It generalizes well to unseen data, making it the **optimal choice**. It avoids the extremes of high bias and high variance, making it "just right."
 
+<div style="text-align: center;">
+<img src="./images/error in case of bias and variance.png" alt="error in case of bias and variance" width="700">
+  <h6> Figure 3: Example of error in case of bias and variance (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
+</div>
