@@ -115,3 +115,22 @@ From **Figure 5**, we observe the following:
 - The **middle model** with an intermediate λ achieves a balance between bias and variance, making it **just right**.
 
 To choose the optimal λ, we can fit the model with different λ values, similar to how we tested different models during model selection. By testing the error Jcv for each λ on the cross-validation set, we select the λ that produces the least Jcv.
+
+## Establishing a baseline level of performance 
+
+Setting a baseline performance is crucial for evaluating a model as it provides a reference point that represents the least possible error. It helps to determine whether a model's performance is acceptable or needs improvement.  
+
+For example, in a speech recognition model, suppose the model has a Jtrain of **10.8%** and a Jcv of **14.8%**. Initially, these may seem like large error values. However, if it is known that humans recognize speech with an error of **10.6%**, then the model's errors are not excessively high when compared to this baseline.  
+
+Thus, baseline performances help to better contextualize and evaluate a model's performance relative to achievable benchmarks.
+
+<div style="text-align: center;">
+<img src="./images/baseline level.png" alt="baseline level" width="600">
+  <h6> Figure 5: Example of bias and variance with baseline level (a screenshot taken from the Coursera Advanced Machine Learning course)</h6>
+</div>
+
+Figure 6 illustrates how baseline performance can be used to analyze bias and variance:  
+
+- **High Bias**: If both Jtrain and Jcv are significantly higher than the baseline level, the model is underfitting and has high bias.  
+- **High Variance**: If Jtrain is close to or lower than the baseline level, but Jcv is much higher, the model is overfitting and has high variance.  
+- **Just Right**: A well-performing model will have both Jtrain and Jcv close to the baseline level, indicating a balanced trade-off between bias and variance.  
