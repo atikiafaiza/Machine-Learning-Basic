@@ -95,4 +95,6 @@ In **Figure 4**, we can analyze the errors for the three models:
 
 3. **Middle Model (Just Right):**  
    - The error on both the training set (**Jtrain**) and the cross-validation set (**Jcv**) is low, indicating that the model is neither overfitting nor underfitting.  
-   - **Conclusion:** The middle model balances bias and variance effectively, achieving low **Jtrain** and **Jcv**.  
+   - **Conclusion:** The middle model balances bias and variance effectively, achieving low **Jtrain** and **Jcv**.
+
+There may also be an exceptional case where the model exhibits both **high bias** and **high variance**. In this rare scenario, the model fails to fit the training set well (resulting in a high **Jtrain**) and also performs poorly on the cross-validation set (leading to a high **Jcv**). However, such cases are uncommon in practice.
