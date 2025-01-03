@@ -100,9 +100,9 @@ In **Figure 4**, we can analyze the errors for the three models:
 There may also be an exceptional case where the model exhibits both **high bias** and **high variance**. In this rare scenario, the model fails to fit the training set well (resulting in a high **Jtrain**) and also performs poorly on the cross-validation set (leading to a high **Jcv**). However, such cases are uncommon in practice.
 
 ## Regularization with bias and variance 
-The **regularization parameter** (denoted as \( \lambda \)) is a hyperparameter added to the cost function to penalize the complexity of the model, helping to prevent overfitting by discouraging overly complex models. 
+The **regularization parameter** (denoted as λ is a hyperparameter added to the cost function to penalize the complexity of the model, helping to prevent overfitting by discouraging overly complex models. 
 
-An optimal regularization parameter \( \lambda \) can also be determined depending on the model's bias and variance.
+An optimal regularization parameter λ can also be determined depending on the model's bias and variance.
 
 <div style="text-align: center;">
 <img src="./images/regularization with bias and variance.png" alt="regularization with bias and variance" width="600">
@@ -110,8 +110,8 @@ An optimal regularization parameter \( \lambda \) can also be determined dependi
 </div>
 
 From **Figure 5**, we observe the following:  
-- The **left model** with a high \( \lambda \) has **high bias**, meaning it underfits the data.  
-- The **right model** with \( \lambda = 0 \) has **high variance**, meaning it overfits the data.  
-- The **middle model** with an intermediate \( \lambda \) achieves a balance between bias and variance, making it **just right**.
+- The **left model** with a high λ has **high bias**, meaning it underfits the data.  
+- The **right model** with λ = 0 has **high variance**, meaning it overfits the data.  
+- The **middle model** with an intermediate λ achieves a balance between bias and variance, making it **just right**.
 
-To choose the optimal \( \lambda \), we can fit the model with different \( \lambda \) values, similar to how we tested different models during model selection. By testing the error \( J_{cv} \) for each \( \lambda \) on the cross-validation set, we select the \( \lambda \) that produces the least \( J_{cv} \).
+To choose the optimal λ, we can fit the model with different λ values, similar to how we tested different models during model selection. By testing the error Jcv for each λ on the cross-validation set, we select the λ that produces the least Jcv.
